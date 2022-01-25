@@ -1,3 +1,30 @@
 # AirBnB_Clone
 
-!https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220125%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220125T171744Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=22e53844d3cef3046daf7665d49fadcd14eac07aad7ad1ff65f8916e30e1752f
+
+![image](https://user-images.githubusercontent.com/88321504/151029160-b8dc0a62-6b39-4932-81a6-55bc1b503961.png)
+
+
+
+**Interpreter**
+
+Basically it helps to manage the objects of our AirBnB project. These include but not limited to:
+
+Create a new object (ex: a new User or a new Place)
+Retrieve an object from a file, a database etc
+Do operations on objects (count, compute stats, etc)
+Update attributes of an object
+Destroy an object
+
+**Goals**
+By the end of the project, we get to know
+
+How to create a Python package
+How to create a command interpreter in Python using the cmd module
+What is Unit testing and how to implement it in a large project
+How to serialize and deserialize a Class
+How to write and read a JSON file
+How to manage datetime
+
+**Authors**
+Faith Milly Ncube
+Moses Oyet David
