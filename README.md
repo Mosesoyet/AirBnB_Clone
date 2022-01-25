@@ -16,6 +16,7 @@ Update attributes of an object
 Destroy an object
 
 **Goals**
+
 By the end of the project, we get to know
 
 How to create a Python package
@@ -26,5 +27,6 @@ How to write and read a JSON file
 How to manage datetime
 
 **Authors**
+
 Faith Milly Ncube
 Moses Oyet David
