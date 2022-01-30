@@ -8,7 +8,7 @@ from datetime import datetime
 
 time = "%Y-%m-%dT%H:%M:%s.%f"
 
-class Basemodel:
+class BaseModel:
     """A parent class"""
     def __init__(self, *args, *kwargs):
         """initializing attributes"""
