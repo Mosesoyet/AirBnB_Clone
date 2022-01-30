@@ -15,6 +15,8 @@ class BaseModel:
         """Initializing of instances"""
         if kwargs is not None and kwargs != {}:
             for key in kwargs:
+                if key not in '__class__':
+                    setattr(self, key)
                 if key == 'created_at' and type(self.created_at) is str:
                     self.__dic__['created_at'] = datetime.strptime(
                             kwargs['created_at'], time)
