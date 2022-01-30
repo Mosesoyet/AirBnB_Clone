@@ -37,4 +37,14 @@ class FileStorage:
         for key in self.__objects:
             json_obj[key] = self.__objects[key].to_dic()
         with open('self.__file_path', 'W') as f:
-            JSON.dump(json_obj, f)
+            json.dump(json_obj, f)
+
+    def reload(self):
+        """deserializes the JSON file to __objects if '__file_path' exits"""
+        try:
+            with open(__file_path, 'r') as f:
+                jo = json.load(f)
+                for key in jo:
+                    self.__object[key] = classes[jo[key]['__class__']](**jo[key])
+        except:
+            pass
