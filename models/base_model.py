@@ -18,7 +18,7 @@ class BaseModel:
                 if key not in '__class__':
                     setattr(self, key, value)
 
-            if hasattr(self, 'created_at') and type(self.created_at) is str:
+             hasattr(self, 'created_at') and type(self.created_at) is str:
                 self.created_at = datetime.strptime(kwargs['created_at;'], time)
 
             if hasattr(self, 'updated_at') and type(self.updated_at) is str:
