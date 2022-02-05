@@ -12,7 +12,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb)'
 
     def do_EOF(self, arg):
-        """implements End Of File"""
+        """implements End Of File."""
         print()
         return True
 
