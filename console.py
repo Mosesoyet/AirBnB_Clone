@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-a class that contain the console command
-"""
+""" console """
 
 import cmd
 from datetime import datetime
@@ -13,40 +11,28 @@ from models.place import Place
 from models.review import Review
 from models.state import State
 from models.user import User
-import shlex #For splitting the line along spaces except in double quotes
-import models
-from models.amenity import Amenity
-from models.base_model import BaseModel
-from models.city import City
-from models.place import Place
-from models.review import Review
-from models.state import State
-from models.user import User
+import shlex  # for splitting the line along spaces except in double quotes
 
 classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
            "Place": Place, "Review": Review, "State": State, "User": User}
 
-classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
 
 class HBNBCommand(cmd.Cmd):
-    """The HBNB console"""
-    prompt = '(hbnb)'
+    """ HBNH console """
+    prompt = '(hbnb) '
 
     def do_EOF(self, arg):
-        """implements End Of File."""
-        print()
-        return True
-
-    def do_quit(self, arg):
-        """Exits the program."""
+        """Exits console"""
         return True
 
     def emptyline(self):
-        """Does nothing on ENTER"""
+        """ overwriting the emptyline method """
         return False
 
-<<<<<<< HEAD
+    def do_quit(self, arg):
+        """Quit command to exit the program"""
+        return True
+
     def do_create(self, arg):
         """Creates a new instance of a class"""
         args = shlex.split(arg)
@@ -154,9 +140,6 @@ class HBNBCommand(cmd.Cmd):
                 print("** instance id missing **")
         else:
             print("** class doesn't exist **")
-
-=======
->>>>>>> d9b99cc58e35b60b754575d3018ce31d4159c79a
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
